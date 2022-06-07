@@ -1,0 +1,6 @@
+framework module Pods_TaleTree_TaleTreeUITests {
+  umbrella header "Pods-TaleTree-TaleTreeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

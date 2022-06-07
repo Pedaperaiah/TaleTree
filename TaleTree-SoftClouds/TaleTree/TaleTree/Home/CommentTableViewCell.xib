@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontsFree-Net-SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="FontsFree-Net-SFProText-Medium.ttf">
+            <string>SFProText-Medium</string>
+        </array>
+        <array key="FontsFree-Net-SFProText-Regular.ttf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentTableViewCell" id="KGk-i7-Jjw" customClass="CommentTableViewCell" customModule="TaleTree" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HolderImage" translatesAutoresizingMaskIntoConstraints="NO" id="TRw-LL-1qi">
+                        <rect key="frame" x="15" y="5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="2ra-7t-aME"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="EOl-c3-x8w"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="Vh1-TZ-cFx"/>
+                            <constraint firstAttribute="height" constant="35" id="gwn-Ci-Wny"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qH-jV-nX8">
+                        <rect key="frame" x="56" y="7" width="225" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="225" id="T7g-U7-r0H"/>
+                            <constraint firstAttribute="height" constant="30" id="lrh-b6-msI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" So cool 😃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETL-zh-X0f">
+                        <rect key="frame" x="55" y="38" width="93" height="38"/>
+                        <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="C42-Zu-iK8"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="93" id="Jfi-UA-sbc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="44m" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWp-M8-sco">
+                        <rect key="frame" x="154" y="56" width="102" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="5t1-eB-tbx"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="ul3-nD-kT0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                        <color key="textColor" red="0.69019607843137254" green="0.69019607843137254" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TRw-LL-1qi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="3Wh-Av-wJO"/>
+                    <constraint firstItem="RWp-M8-sco" firstAttribute="leading" secondItem="ETL-zh-X0f" secondAttribute="trailing" constant="6" id="77b-WP-Snc"/>
+                    <constraint firstItem="TRw-LL-1qi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="HoQ-Ck-gLg"/>
+                    <constraint firstItem="TRw-LL-1qi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="OuV-4H-vWj"/>
+                    <constraint firstItem="ETL-zh-X0f" firstAttribute="top" secondItem="3qH-jV-nX8" secondAttribute="bottom" constant="1" id="eOg-01-Ijr"/>
+                    <constraint firstAttribute="bottom" secondItem="RWp-M8-sco" secondAttribute="bottom" constant="5" id="eX5-o1-bpy"/>
+                    <constraint firstItem="3qH-jV-nX8" firstAttribute="leading" secondItem="TRw-LL-1qi" secondAttribute="trailing" constant="6" id="nRK-9P-bro"/>
+                    <constraint firstItem="3qH-jV-nX8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="wEX-pP-Ld4"/>
+                    <constraint firstItem="TRw-LL-1qi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="xI8-o6-FZp"/>
+                    <constraint firstItem="ETL-zh-X0f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="55" id="yvq-ZA-w1z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLbl" destination="RWp-M8-sco" id="nNM-Oi-E2g"/>
+                <outlet property="userCommentLbl" destination="ETL-zh-X0f" id="Xb9-gT-fte"/>
+                <outlet property="userProfileImg" destination="TRw-LL-1qi" id="FRd-sA-wXl"/>
+                <outlet property="userProfileName" destination="3qH-jV-nX8" id="GNr-Bl-aLi"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="103.79464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="HolderImage" width="80" height="80"/>
+    </resources>
+</document>
